@@ -1,0 +1,164 @@
+@font-face {
+  font-family: BodoniModaRegular;
+  src: url(../fonts/BodoniModa/BodoniModa-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: NunitoSansRegular;
+  src: url(../fonts/NunitoSans/NunitoSans-Regular.ttf);
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{ text-decoration: none;}
+img {
+  width: 300px;
+  height: fit-content
+}
+
+.h {
+  font-family: BodoniModaRegular, serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #4f4f4f;
+}
+p, a {
+  color: #454545;
+  font-size: 1.25rem;
+  font-family: NunitoSansRegular, sans-serif;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background: white;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0px 4px 10px 0px #dadada90;
+}
+
+.s1 {
+  background: #FFF5F5;
+}
+.s2 {
+  background: #FFF;
+}
+
+.btn {
+  margin: 20px 0;
+  padding: 5px 0;
+
+  a {
+    pointer-events: all;
+    padding: 10px 40px;
+    background: #454545;
+    color: white;
+  }
+  a:hover{
+    background: #2c2c2c;
+  }
+  img {
+    width: 503px;
+  }
+}
+
+.hero_section, section#services {
+  padding: 30px 20px;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  p { 
+    margin: 30px 0;
+  }
+
+  img {
+    width: 200px;
+  }
+}
+
+section#featured {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  :nth-child(1) {
+    color: #454545;
+    font-size: 2rem;
+    font-family: BodoniModaRegular, sans;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 206px;
+    margin: 10px;
+  }
+}
+
+section#about {
+  padding: 50px 20px;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}
+
+section#ready {
+  padding: 50px 20px;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 23px;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  h3 {
+    font-family: BodoniModaRegular;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #4f4f4f;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+.flex-item-left {
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  section#featured {
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+}

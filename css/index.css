@@ -1,0 +1,206 @@
+@font-face {
+  font-family: BodoniModaRegular;
+  src: url(../fonts/BodoniModa/BodoniModa-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: NunitoSansRegular;
+  src: url(../fonts/NunitoSans/NunitoSans-Regular.ttf);
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 300px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h {
+  font-family: BodoniModaRegular, serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #4f4f4f;
+}
+
+p, a {
+  color: #454545;
+  font-size: 1.25rem;
+  font-family: NunitoSansRegular, sans-serif;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background: white;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0px 4px 10px 0px #dadada90;
+          box-shadow: 0px 4px 10px 0px #dadada90;
+}
+
+.s1 {
+  background: #FFF5F5;
+}
+
+.s2 {
+  background: #FFF;
+}
+
+.btn {
+  margin: 20px 0;
+  padding: 5px 0;
+}
+
+.btn a {
+  pointer-events: all;
+  padding: 10px 40px;
+  background: #454545;
+  color: white;
+}
+
+.btn a:hover {
+  background: #2c2c2c;
+}
+
+.btn img {
+  width: 503px;
+}
+
+.hero_section, section#services {
+  padding: 30px 20px;
+}
+
+.hero_section h1, section#services h1 {
+  margin-bottom: 20px;
+}
+
+.hero_section p, section#services p {
+  margin: 30px 0;
+}
+
+.hero_section img, section#services img {
+  width: 200px;
+}
+
+section#featured {
+  padding: 50px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#featured :nth-child(1) {
+  color: #454545;
+  font-size: 2rem;
+  font-family: BodoniModaRegular, sans;
+  margin-bottom: 10px;
+}
+
+section#featured img {
+  width: 206px;
+  margin: 10px;
+}
+
+section#about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section#about h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section#ready {
+  padding: 50px 20px;
+}
+
+section#ready h1 {
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-container h3 {
+  font-family: BodoniModaRegular;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #4f4f4f;
+  margin-bottom: 10px;
+}
+
+.flex-container .card {
+  margin-bottom: 20px;
+}
+
+.flex-item-left {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.flex-item-right {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  section#featured {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=index.css.map */
